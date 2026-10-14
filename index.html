@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvajal Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf0;
+            color: #18392b;
+        }
+
+        header {
+            background: #123b2a;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #e8bd69;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .hero {
+            padding: 65px 7%;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .hero-text h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 100%;
+            max-width: 480px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d9a441;
+            color: #123b2a;
+            padding: 14px 22px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu {
+            padding: 50px 7%;
+            text-align: center;
+            background: #f4eddf;
+        }
+
+        .menu h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .food-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 14px;
+            overflow: hidden;
+            padding-bottom: 20px;
+            box-shadow: 0 4px 12px #00000012;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .food-card h3 {
+            margin: 15px 0 8px;
+        }
+
+        .food-card p {
+            color: #68746c;
+        }
+
+        .about {
+            text-align: center;
+            padding: 55px 7%;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: 15px auto 25px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #123b2a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            .hero-text h1 {
+                font-size: 35px;
+            }
+
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>CARVAJAL</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Good Food.<br>Great Moments.</h1>
+
+            <p>
+                Welcome to Carvajal Restaurant!
+                Enjoy delicious meals, fresh ingredients,
+                and wonderful moments with family and friends.
+            </p>
+
+            <a href="#menu" class="btn">
+                Explore Our Menu
+            </a>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+            alt="Beautiful restaurant dining area">
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Popular Meals</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+                <img
+                    src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=700&q=80"
+                    alt="Delicious rice">
+                <h3>Special Rice</h3>
+                <p>Fresh and delicious</p>
+            </div>
+
+            <div class="food-card">
+                <img
+                    src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=700&q=80"
+                    alt="Grilled chicken">
+                <h3>Grilled Chicken</h3>
+                <p>Full of delicious flavour</p>
+            </div>
+
+            <div class="food-card">
+                <img
+                    src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=700&q=80"
+                    alt="Fresh pasta">
+                <h3>Fresh Pasta</h3>
+                <p>Made for food lovers</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>Why Choose Carvajal?</h2>
+
+        <p>
+            We believe every meal should be special.
+            Our goal is to serve delicious food in a
+            welcoming atmosphere. Come hungry and
+            leave happy!
+        </p>
+
+        <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <footer id="contact">
+        <h3>CARVAJAL RESTAURANT</h3>
+        <p>Good Food. Great Moments.</p>
+        <p>Phone: Add your phone number</p>
+        <p>Address: Add your restaurant address</p>
+        <p>&copy; 2026 Carvajal Restaurant</p>
+    </footer>
+
+</body>
+</html>
